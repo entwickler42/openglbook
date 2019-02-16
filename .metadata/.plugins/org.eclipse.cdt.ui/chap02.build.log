@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project chap02 ****
+
+make all 
+Building file: ../chap02.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"chap02.d" -MT"chap02.d" -o "chap02.o" "../chap02.c"
+Finished building: ../chap02.c
+ 
+Building target: chap02
+Invoking: GCC C Linker
+gcc  -o "chap02"  ./chap02.o   -lGL -lGLEW -lglut -lGLU
+Finished building target: chap02
+ 
+
+**** Build Finished ****

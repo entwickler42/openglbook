@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project chap04 ****
+
+****  WARNING: The "Debug" Configuration may not build  ****
+****  because it uses the "MinGW GCC"  ****
+****  tool-chain that is unsupported on this system.  ****
+
+****  Attempting to build...  **** 
+
+make all 
+Building file: ../chap04.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"chap04.d" -MT"chap04.d" -o "chap04.o" "../chap04.c"
+Finished building: ../chap04.c
+ 
+Building file: ../utils.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utils.d" -MT"utils.d" -o "utils.o" "../utils.c"
+Finished building: ../utils.c
+ 
+Building target: chap04
+Invoking: MinGW C Linker
+gcc  -o "chap04"  ./chap04.o ./utils.o   -lfreeglut -lopengl32 -lglu32 -lglew32
+/usr/bin/ld: cannot find -lfreeglut
+/usr/bin/ld: cannot find -lopengl32
+/usr/bin/ld: cannot find -lglu32
+/usr/bin/ld: cannot find -lglew32
+collect2: ld returned 1 exit status
+make: *** [chap04] Error 1
+
+**** Build Finished ****
